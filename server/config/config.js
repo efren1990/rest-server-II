@@ -21,7 +21,8 @@ if(process.env.NODE_ENV === 'dev'){
 }else{
   
   // ESTABLECER CONEXION ATLAS
-  urlDB = 'mongodb+srv://developer:K0lW5IznFCR7HxA6@clusterpractice.oahzc.mongodb.net/cafe';
+  /**process.env.MONGO_URI */
+  urlDB = process.env.MONGO_URI;
 
 }
 
